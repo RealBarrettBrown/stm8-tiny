@@ -10,8 +10,11 @@
 #include "tiny_ram_key_value_store.h"
 
 typedef struct {
-  i_tiny_key_value_store_t* key_value_store;
-  tiny_event_subscription_t on_change_subscription;
+  struct {
+    i_tiny_key_value_store_t* key_value_store;
+    tiny_event_subscription_t on_change_subscription;
+    uint8_t data;
+  } _inner;
 } charge_t;
 
 void charge_init(

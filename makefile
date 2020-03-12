@@ -1,10 +1,10 @@
 TARGET = tiny
 BUILD_DIR = ./build
 
-DEVICE := stm8s105c6
-DEVICE_TYPE := STM8S105
+DEVICE := stm8s103f3
+DEVICE_TYPE := STM8S003
 STLINK := stlinkv2
-OPENOCD_CFG := openocd/stm8s105.cfg
+OPENOCD_CFG := openocd/stm8s003.cfg
 
 MAIN := src/main.c
 
